@@ -3,16 +3,19 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.9</version>
+		<groupId>it.corso</groupId>
+		<artifactId>mygym-cloud</artifactId>
+		<version>1.0.1-ALPHA</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>it.corso</groupId>
 	<artifactId>mygym</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mygym</name>
 	<description>My Gym Project for Spring Boot</description>
+
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
