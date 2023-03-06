@@ -6,22 +6,25 @@
 		<groupId>it.corso</groupId>
 		<artifactId>mygym-cloud</artifactId>
 		<version>1.0.1-ALPHA</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>corso.it</groupId>
-	<artifactId>Eureka</artifactId>
+	<groupId>it.corso</groupId>
+	<artifactId>Admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Eureka</name>
-	<description>Eureka Server</description>
+	<name>Admin</name>
+	<description>Admin spring</description>
 	<properties>
-		<packaging>jar</packaging>
 		<java.version>17</java.version>
-		<spring-cloud.version>2021.0.5</spring-cloud.version>
+		<spring-boot-admin.version>2.7.4</spring-boot-admin.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<version>${spring-cloud-starter.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-server</artifactId>
 		</dependency>
 
 		<dependency>
@@ -30,7 +33,17 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>de.codecentric</groupId>
+				<artifactId>spring-boot-admin-dependencies</artifactId>
+				<version>${spring-boot-admin.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>
