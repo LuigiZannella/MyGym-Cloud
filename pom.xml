@@ -22,7 +22,8 @@
 		<module>Eureka</module>
 		<module>mygym</module>
 		<module>Admin</module>
-	</modules>
+        <module>Config-Server</module>
+    </modules>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
